@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/"
+	debug="false">
+
+	<!--
+		日志级别 Level.ALL打开所有日志 Level.DEBUG 用于调试 Level.INFO 用于运行过程 Level.WARN
+		用于潜在的错误 Level.ERROR 用于错误事件 Level.FATAL 用于严重错误时间 Level.OFF 关闭所有日志
+	-->
+
+	<!--
+		Log4j提供的appender有以下几种： org.apache.log4j.ConsoleAppender（控制台），
+		org.apache.log4j.FileAppender（文件），
+		org.apache.log4j.DailyRollingFileAppender（每天产生一个日志文件），
+		org.apache.log4j.RollingFileAppender（文件大小到达指定尺寸的时候产生一个新的文件），
+		org.apache.log4j.WriterAppender（将日志信息以流格式发送到任意指定的地方）
+	-->
+
+	<!--
+		appender 部分是可用的日志输出方式定义，可以定义多个
+		设置通道STDOUT和输出方式：org.apache.log4j.ConsoleAppender
+	-->
+	<appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+		<!--
+			layout指定布局模式 其中，Log4j提供的layout有以下几种：
+			×org.apache.log4j.HTMLLayout（以HTML表格形式布局），
+			org.apache.log4j.PatternLayout（可以灵活地指定布局模式），
+			org.apache.log4j.SimpleLayout（包含日志信息的级别和信息字符串），
+			org.apache.log4j.TTCCLayout（包含日志产生的时间、线程、类别等等信息）
+		-->
+		<layout class="org.apache.log4j.PatternLayout">
+			<!-- 设置输出文件项目和格式 -->
+			<param name="ConversionPattern" value="[%-5p] %d{yyyy-MM-dd HH:mm:ss} :%m%n" />
+			<!-- 底下提供另外一种格式 -->
+			<!--
+				<param name="ConversionPattern" value="%l %d{ISO8601} - %p - %m%n"
+				/>
+			-->
+		</layout>
+	</appender>
+	
+	<!--  -->
+	<category name="org.apache.jasper"><priority value="DEBUG" /></category>
+	<category name="org.apache.catalina.startup.TldConfig"><priority value="DEBUG" /></category>
+	<category name="org.apache.catalina.session.ManagerBase"><priority value="DEBUG" /></category>
+	
+	<category name="com.fiscal"><priority value="DEBUG" /></category> 
+	<category name="com.system"><priority value="DEBUG" /></category> 
+	
+	<category name="org.apache.ibatis"><priority value="DEBUG" /></category>
+	<category name="org.mybatis.spring"><priority value="DEBUG" /></category>
+	
+	<category name="java.sql.Connection"><priority value="DEBUG" /></category>
+	<category name="java.sql.Statement"><priority value="DEBUG" /></category>
+	<category name="java.sql.PreparedStatement"><priority value="DEBUG" /></category>
+	<category name="java.sql.ResultSet"><priority value="DEBUG" /></category>
+	
+	<root>
+		<priority value="INFO" />
+		<appender-ref ref="STDOUT" />
+	</root>
+
+</log4j:configuration>

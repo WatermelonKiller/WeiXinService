@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="wxService"
+  id="myeclipse.1401362768986"
+  context-root="/wxService"
+  j2ee-spec="6.0"
+  archive="wxService.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

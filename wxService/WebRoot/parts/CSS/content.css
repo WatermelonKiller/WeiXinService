@@ -1,0 +1,953 @@
+@charset "utf-8";
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-size:12px;
+	color: #333;
+}
+
+img,input {
+	border: none;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover,a:active {
+	text-decoration: underline;
+	color: #d50000;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	list-style: none;
+}
+
+.clear {
+	clear: both;
+	height: 0px;
+}
+/* 兼容火狐按钮 */
+input[type="reset"]::-moz-focus-inner,input[type="button"]::-moz-focus-inner,input[type="submit"]::-moz-focus-inner,input[type="file"]>input[type="button"]::-moz-focus-inner
+	{
+	border: none;
+	padding: 0;
+}
+
+textarea {
+	border: 1px solid #d2d2d2;
+}
+/*  welcome页  */
+/* 欢迎页图片 */
+.left {
+	float: left;
+	width: 42%;
+}
+.marginLeft{ margin-left:15px;}
+.welcome_photo {
+	width: 593px;
+	height: 104px;
+	margin-top: 15%;
+	margin-left: 5%;
+}
+
+.m_box {
+	float: left;
+	width: 99%;
+	height:270px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	border: 1px solid #a7a7a7;
+	background:#fff;
+}
+
+.m_name {
+	background: url(images/module_bg_36.jpg) no-repeat left #5f5f5f;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+	padding-left: 30px;
+	font-size:14px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.m_name span {
+	float: left;
+}
+
+.m_name a {
+	float: right;
+	font-size:12px;
+	font-weight: normal;
+	text-align: right;
+	margin-right: 10px;
+	color: #ff8f8f;
+}
+
+.m_name a:hover,.m_name a:active {
+	color: #ff8f8f;
+	text-decoration: underline;
+}
+
+.m_box_content {
+	width:99.9%;
+	background: #fff;
+}
+
+.m_box_content li {
+	padding: 0px 5px;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+}
+
+.m_box_content li span {
+	float: right;
+	text-align: right;
+}
+
+.even {
+	background: #efefef;
+}
+
+.statistics {
+	height:230px;
+	padding: 5px 0px;
+	text-align: center;
+	background: url(images/statistics_bg_45.jpg) no-repeat left bottom #fff;
+}
+/* 热门菜单排行榜 */
+.menu_leaderboard{
+	float:left;
+	width:49.9%;
+	background:#fff;
+}
+.menu_leaderboard li{
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+	padding-left:35px;
+}
+.no1{ background:url(images/no1_03.png) 10px center no-repeat;}
+.no1 img{ margin-left:2px;}
+.no2{ background:url(images/no2_06.png) 10px center no-repeat #efefef;}
+.no3{ background:url(images/no3_08.png) 10px center no-repeat;}
+.no4{ background:url(images/no4_10.png) 10px center no-repeat #efefef;}
+.no5{ background:url(images/no5_12.png) 10px center no-repeat;}
+.no6{ background:url(images/no6_14.png) 10px center no-repeat #efefef;}
+.no7{ background:url(images/no7_16.png) 10px center no-repeat;}
+.no8{ background:url(images/no8_18.png) 10px center no-repeat #efefef;}
+.no9{ background:url(images/no9_20.png) 10px center no-repeat;}
+.no10{ background:url(images/no10_20.png) 10px center no-repeat #efefef;}
+.no11{ background:url(images/no11_20.png) 10px center no-repeat;}
+.no12{ background:url(images/no12_20.png) 10px center no-repeat #efefef;}
+.no13{ background:url(images/no13_20.png) 10px center no-repeat;}
+.no14{ background:url(images/no14_20.png) 10px center no-repeat #efefef;}
+.no15{ background:url(images/no15_20.png) 10px center no-repeat;}
+.no16{ background:url(images/no16_20.png) 10px center no-repeat #efefef;}
+/*  查询处样式 */
+.search_box {
+	width: 100%;
+	margin: 0px auto;
+	vertical-align: middle;
+	line-height: 25px;
+	text-align:left;
+}
+
+.search_box li {
+	display: inline;
+}
+/* 搜索处文本框样式 */
+.itext {
+	font-size:12px;
+	width: 100px;
+	height: 20px;
+	line-height: 20px;
+	vertical-align: middle;
+	border: 1px solid #d2d2d2;
+	background: #fff;
+	margin: 0px 5px 0px 2px;
+	padding: 0px 2px;
+}
+/* 表格里文本框样式 */
+.adtext {
+	width: 98%;
+	height: 20px;
+	line-height: 20px;
+	vertical-align: middle;
+	border: 1px solid #d2d2d2;
+	background: #fff;
+	padding: 0px 1px;
+}
+/* 单选框样式 */
+.iradio {
+	height: 19px;
+	line-height: 19px;
+	vertical-align: middle;
+	margin: 0px 5px;
+}
+/* 按钮样式 */
+/* 建议使用1个字 */
+.btn {
+	width: 46px;
+	font-size:12px;
+	color: #333;
+	cursor: pointer;
+	text-align: center;
+	height: 22px;
+	margin: 2px 5px;
+	line-height: 20px;
+	vertical-align: middle;
+	background: url(images/btn1.jpg) no-repeat;
+}
+
+.btn0 {
+	width: 25px;
+	font-size:12px;
+	color: #333;
+	cursor: pointer;
+	text-align: center;
+	height: 22px;
+	margin: 2px 5px;
+	line-height: 20px;
+	vertical-align: middle;
+	background: url(images/btn0.jpg) no-repeat;
+}
+
+/* 建议使用3个字 */
+.btn3 {
+	width: 65px;
+	font-size:12px;
+	color: #333;
+	cursor: pointer;
+	text-align: center;
+	height: 22px;
+	margin: 2px 5px;
+	line-height: 22px;
+	vertical-align: middle;
+	background: url(images/btn3.jpg) no-repeat;
+}
+/* 建议使用4个字 */
+.btn4 {
+	width: 71px;
+	font-size:12px;
+	color: #333;
+	cursor: pointer;
+	text-align: center;
+	height: 22px;
+	margin: 2px 5px;
+	line-height: 22px;
+	vertical-align: middle;
+	background: url(images/btn4.jpg) no-repeat;
+}
+/* 建议使用5个字 */
+.btn5 {
+	width: 81px;
+	font-size:12px;
+	color: #333;
+	cursor: pointer;
+	text-align: center;
+	height: 22px;
+	margin: 2px 5px;
+	line-height: 22px;
+	vertical-align: middle;
+	background: url(images/btn5.jpg) no-repeat;
+}
+/* 建议使用6个字 */
+.btn6 {
+	width: 92px;
+	font-size:12px;
+	color: #333;
+	cursor: pointer;
+	text-align: center;
+	height: 22px;
+	margin: 2px 5px;
+	line-height: 22px;
+	vertical-align: middle;
+	background: url(images/btn6.jpg) no-repeat;
+}
+/* 建议使用7个字 */
+.btn7 {
+	width: 104px;
+	font-size:12px;
+	color: #333;
+	cursor: pointer;
+	text-align: center;
+	height: 22px;
+	margin: 2px 5px;
+	line-height: 22px;
+	vertical-align: middle;
+	background: url(images/btn7.jpg) no-repeat;
+}
+/* 建议使用8个字 */
+.btn8 {
+	width: 117px;
+	font-size:12px;
+	color: #333;
+	cursor: pointer;
+	text-align: center;
+	height: 22px;
+	margin: 2px 5px;
+	line-height: 22px;
+	vertical-align: middle;
+	background: url(images/btn8.jpg) no-repeat;
+}
+/* 建议使用9个字 */
+.btn9{
+ width:130px;
+ font-size:12px;
+ color:#333;
+ cursor:pointer;
+ text-align:center;
+ height:22px;
+ margin: 2px 5px;
+ line-height:22px;
+ vertical-align:middle;
+ background:url(images/btn9.jpg) no-repeat;
+}
+/* 建议使用10个字 */
+.btn10{
+ width:139px;
+ font-size:12px;
+ color:#333;
+ cursor:pointer;
+ text-align:center;
+ height:22px;
+ margin: 2px 5px;
+ line-height:22px;
+ vertical-align:middle;
+ background:url(images/btn10.jpg) no-repeat;
+}
+/*对main.css里ckxxcx样式进行修改*/
+table.ckxxcx{
+	background:#fff;
+}
+/* 套表格的外框样式 */
+.table_box {
+	width: 100%;
+	margin: 0px auto;
+	margin-top: 15px;
+	overflow-x: auto;
+}
+/* 表格样式 */
+.stable {
+	width: 100%;
+	margin: 0px auto;
+	border: 1px solid #cbcbcb;
+	border-bottom: none;
+	border-right: none;
+	background:#fff;	
+}
+.stable th {
+	text-align: center;
+	font-weight: bold;
+	color: #333;
+	height: 29px;
+	line-height: 29px;
+	vertical-align: middle;
+	border-bottom: 1px solid #cbcbcb;
+	border-right: 1px solid #cbcbcb;
+	background: url(images/th_bg_49.jpg);
+}
+
+.stable td {
+	color: #333;
+	height: 26px;
+	padding: 2px;
+	padding-top:0px;
+	text-align: center;
+	line-height: 29px;
+	vertical-align: middle;
+	border-right: 1px solid #cbcbcb;
+	border-bottom: 1px solid #cbcbcb;
+}
+.stable td a{
+	margin:0px 3px;
+	font-weight:bold;
+	text-decoration: underline;
+}
+.stable td a:hover, .stable td a:active{
+	color:#F73809;
+	text-decoration: underline;
+}
+/* 分页样式 */
+.page {
+	width: 100%;
+	margin: 0px auto;
+	height: 30px;
+	padding-top: 2px;
+	background: url(images/page_bg_64.jpg) repeat-x;
+}
+
+.c_page {
+	width: 854px;
+	margin: 0px auto;
+	height: 28px;
+	line-height: 28px;
+	vertical-align: middle;
+	background: url(images/page_67.png) no-repeat;
+	text-align: center;
+	color: #333;
+}
+
+.c_page span {
+	color: #ce0000;
+	font-weight: bold;
+	margin: 0px 5px;
+}
+
+.total {
+	width: 53px;
+	height: 18px;
+	line-height: 18px;
+	vertical-align: middle;
+	text-align: center;
+	border: 1px solid #d2d2d2;
+}
+
+.c_page .current_page {
+	color: #0052ce;
+}
+
+.c_page a {
+	margin: 0px 10px;
+}
+
+.c_page a:hover,.c_page a:active {
+	text-decoration: none;
+}
+
+.dpage {
+	width: 38px;
+	height: 18px;
+	line-height: 18px;
+	vertical-align: middle;
+	text-align: center;
+	border: 1px solid #d2d2d2;
+}
+
+.theven {
+	background: #efefef;
+}
+/* 汇总样式 */
+.hz {
+	height: 30px;
+	line-height: 30px;
+	text-align: left;
+	background: url(images/hz_bg_03.jpg) left bottom no-repeat #f7f7f7;
+	padding-left: 25px;
+}
+
+.hz span {
+	margin: 0px 5px;
+	color: #bc0000;
+}
+
+.subn {
+	font-weight: bold;
+}
+/* 下拉框样式 */
+.ddl {
+	width: 98%;
+	border: 1px solid #d2d2d2;
+	height: 20px;
+	line-height: 20px;
+	vertical-align: middle;
+}
+
+.ddl option {
+	text-align: center;
+}
+/* 添加页样式 */
+.addtable {
+	width: 99%;
+	margin: 0px auto;
+	margin-top: 10px;
+	border-top: 1px solid #9e9e9e;
+	border-right: 1px solid #9e9e9e;
+}
+.addtable caption{
+	text-align: left;
+	font-weight: bold;
+	color: #333;
+	height: 29px;
+	line-height: 29px;
+	vertical-align: middle;
+	border: 1px solid #9e9e9e;
+	border-bottom:none;
+	padding-left:10px;
+	background: url(images/th_bg_49.jpg) repeat-x;
+}
+.addtable th {
+	border-left: 1px solid #9e9e9e;
+	border-bottom: 1px solid #9e9e9e;
+	font-weight: normal;
+	line-height: 30px;
+	text-align: center;
+	background: #f1f1f1;
+}
+
+.addtable th span {
+	color: #FF0000;
+	margin: 0px 5px;
+}
+
+.addtable td {
+	border-left: 1px solid #9e9e9e;
+	border-bottom: 1px solid #9e9e9e;
+	font-weight: normal;
+	text-align: center;
+	line-height: 30px;
+	vertical-align: middle;
+	background: #fff;
+	padding: 0px;
+}
+
+.atextarea {
+	width: 98%;
+	color: #333;
+	font-size:12px;
+	margin: 5px 0px;
+	padding: 1px;
+}
+/* 普通添加页按钮存放处 */
+.button_position {
+	width: 99%;
+	margin: 0px auto;
+	text-align: center;
+	margin-top: 15px;
+}
+/* 员工档案添加、修改页样式 */
+.title {
+	width: 100%;
+	margin: 0px auto;
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+	color: #333;
+}
+
+.staff_box {
+	width: 100%;
+	margin: 0px auto;
+	margin-top: 20px;
+}
+
+.jbxx {
+	float: left;
+	width: 133px;
+	height: 32px;
+	line-height: 32px;
+	vertical-align: middle;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: center;
+	background: url(images/yg_tbg_02.jpg) left no-repeat;
+}
+
+.btn_box {
+	float: right;
+	height: 27px;
+	padding-top: 5px;
+	margin-right: 25px;
+}
+
+.stafftable {
+	width: 100%;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	border-top: 1px solid #737373;
+	border-right: 1px solid #d1d1d1;
+}
+
+.stafftable th {
+	width: 10%;
+	font-size:12px;
+	border-left: 1px solid #d1d1d1;
+	border-bottom: 1px solid #d1d1d1;
+	font-weight: normal;
+	text-align: right;
+	padding-right: 10px;
+	line-height: 30px;
+	background: #f3f3f3;
+}
+
+.stafftable th span {
+	color: #FF0000;
+	margin: 0px 5px;
+}
+
+.stafftable td {
+	width: 20%;
+	border-left: 1px solid #d1d1d1;
+	border-bottom: 1px solid #d1d1d1;
+	font-weight: normal;
+	line-height: 30px;
+	vertical-align: middle;
+	background: #fefefe;
+	padding: 0px 2px;
+}
+
+.staff_photo {
+	width: 120px;
+	text-align: center;
+}
+/* 首页定制样式 */
+.diy_form {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 800px;
+	margin-left: -400px;
+	margin-top: -240px;
+	border: 1px solid #0f0f0f;
+}
+
+.classify_box {
+	background: #f6f6f6;
+	border-bottom: 1px dotted #d3d3d3;
+}
+
+.classify {
+	float: left;
+	width: 118px;
+	text-align: center;
+	padding-top: 15px;
+	font-size:14px;
+	color: #333;
+	vertical-align: top;
+}
+
+.classify_btn,.classify_btn_even {
+	float: left;
+	width: 667px;
+	padding-top: 10px;
+	padding-left: 15px;
+}
+
+.classify_btn {
+	background: #fff;
+}
+
+.classify_btn_even {
+	background: #fff5f5;
+}
+
+.classify_btn a,.classify_btn_even a {
+	float: left;
+	display: block;
+	margin-right: 13px;
+	margin-bottom: 10px;
+	width: 70px;
+	text-align: center;
+	font-size:12px;
+	line-height: 24px;
+	background: url(images/diy_bg_60.jpg) no-repeat;
+}
+
+.classify_btn a:hover,.classify_btn a:active,.classify_btn_even a:hover,.classify_btn_even a:active
+	{
+	background: url(images/diys_bg_54.jpg) no-repeat;
+	text-decoration: none;
+}
+/* 附件样式 */
+.attachments {
+	width: 100%;
+	margin-top: 10px;
+	border-top: 1px solid #b0b0b0;
+}
+
+.attachments th {
+	text-align: left;
+	line-height: 29px;
+	border: none;
+	background: url(images/attachments_bg_03.jpg) repeat-x;
+}
+
+.attachments th span {
+	color: #333333;
+	margin-left: 10px;
+	padding: 2px 0px;
+	padding-left: 25px;
+	background: url(images/attachments.png) left center no-repeat;
+}
+
+.attachments td {
+	border: none;
+	text-align: left;
+	padding: 0px 10px;
+	border-bottom: 1px dotted #c9c9c9;
+}
+
+.attachments_button_position {
+	width: 99%;
+	margin: 10px auto;
+	text-align: center;
+}
+/* 下载按钮 */
+.download {
+	float: right;
+	margin-right: 20px;
+	padding-left: 20px;
+	background: url(images/download.jpg) left center no-repeat;
+	cursor: pointer;
+}
+.download2 {
+	margin-right: 20px;
+	padding-left: 20px;
+	background: url(images/download.jpg) left center no-repeat;
+	cursor: pointer;
+}
+/* 删除按钮 */
+.del {
+	float: right;
+	padding-left: 20px;
+	margin-right: 5px;
+	background: url(images/del.jpg) left center no-repeat;
+	cursor: pointer;
+}
+.del2 {
+	padding-left: 20px;
+	margin-right: 5px;
+	background: url(images/del.jpg) left center no-repeat;
+	cursor: pointer;
+}
+/* 过期标志 */
+.table_sm {
+	width: 99%;
+	margin: 0px auto;
+	text-align: right;
+}
+
+.d7 {
+	display: block;
+	float: right;
+	font-size:12px;
+	padding: 5px 0px;
+	padding-left: 25px;
+	margin-right: 15px;
+	background: url(images/15_7_05.jpg) no-repeat left center;
+}
+
+.d15_7 {
+	display: block;
+	float: right;
+	padding: 5px 0px;
+	font-size:12px;
+	padding-left: 25px;
+	margin-right: 15px;
+	background: url(images/7_07.jpg) no-repeat left center;
+}
+
+.gq {
+	display: block;
+	float: right;
+	padding: 5px 0px;
+	font-size:12px;
+	padding-left: 25px;
+	margin-right: 5px;
+	background: url(images/gq_03.jpg) no-repeat left center;
+}
+/*警示信息*/
+.jingshi{
+	background:#fff9eb;
+}
+/* 部门核算 */
+.accounting{
+	float:left;
+	width:40%;
+	margin-left:10px;
+	background:#ffffff;
+}
+.accounting .title{
+	border:1px solid  #cbcbcb;
+	background: url(images/accounting_titlebg_76.jpg) repeat-x;
+	height: 28px;
+	line-height: 28px;
+	vertical-align:middle;
+	text-align:left;
+}
+.accounting h3{
+	display:inline;
+	font-size:12px;
+	font-weight:normal;
+	color:#333;
+	padding-left:10px;
+}
+.accounting span{
+	float:right;
+}
+.accounting ul, .accounting_selected ul{
+	float:left;
+	width:100%;
+	border:1px solid #cbcbcb;
+	border-top:none;
+	padding-top:10px;
+}
+.accounting li, .accounting_selected li{
+	float:left;
+	font-size:12px;
+	line-height:22px;
+	margin:10px 5px;
+	margin-top:0px; 
+	padding:0px 10px;
+	border:1px solid #90cf8b;
+}
+/* 已选中 */
+.accounting_selected li{
+	border:1px solid #f3b100;
+}
+/* 公告信息样式 */
+.notice{
+	width:95%;
+	margin:0px auto;
+}
+.notice .title{
+	margin-top:20px;
+	font-size:20px;
+	font-weight:bold;
+	color:#CD0027;
+	padding-bottom:15px;
+	border-bottom:2px groove #bfbfbf;
+}
+.notice .content{
+	margin-top:15px;
+	line-height:25px;
+	text-indent: 2em;
+	font-size:12px;
+}
+/* 发布时间 */
+.notice .published{
+	margin:30px 0px 20px 0px;
+	height:30px;
+	line-height:30px;
+	vertical-align:middle;
+	border-top:2px groove #bfbfbf;
+	text-align:right;
+	font-size:12px;
+	padding-right:15px;
+}
+.published span{
+	color:#820a0a;
+	margin-left:25px;
+	font-weight: bold;
+}
+/* 电子邮件 */
+.mail{
+	width:99%;
+	height:500px;
+	margin-top:15px;
+}
+.mail .title{
+	background:#fff0f0;
+	width:99%;
+	text-align:left;
+	padding:10px;
+	padding-bottom:5px;
+	border-bottom:1px solid #810000;
+}
+.mail h1{
+	font-size:16px;
+	font-weight:bold;
+}
+.mail .title ul{
+	font-size:12px;
+	margin-top:15px;
+}
+.mail .title li{
+	color:#959595;
+	height:22px;
+	font-weight: normal;
+}
+.mail .title xmp{
+	display: inline;
+}
+.mail .title span{
+	font-weight: bold;
+}
+.mail .content{
+	width:100%;
+	height:420px;
+	overflow:auto;
+	padding:5px;
+	padding-right:0px;
+	font-size:12px;
+	border-bottom:1px solid #810000;
+}
+/* 快速通道 */
+.quick_channel{
+	position:absolute;
+	right:0px;
+	top:0px;
+	width:141px;
+	margin:0px;
+	overflow:hidden;
+}
+/* 辅助办公 */
+.fzbg{
+	margin-bottom:10px;
+}
+.fzbg .title,.cylj .title{
+	margin-bottom:3px;
+}
+.fzbg .content{
+	background:#fffafa;
+	border:1px solid #818181;
+	padding-bottom:10px;
+}
+.fzbg ul{
+	margin-top:8px;
+}
+.fzbg li{
+	text-align:center;
+}
+.fzbg li img{
+	margin-bottom:5px;
+}
+.fzbg .afont{
+	display:block;
+	width:103px;
+	margin:0px auto;
+	height:21px;
+	background:url(images/fzbg_cbg_65.jpg) no-repeat;
+	line-height:21px;
+	vertical-align:middle;
+	text-align:center;
+	color:#333;
+}
+.fzbg .afont:hover,.fzbg .afont:active{ color:#d80000;}
+/* 常用链接 */
+.cylj ul{
+	float:left;
+	background:#fffafa;
+	border:1px solid #818181;
+	padding-top:10px;
+	padding-bottom:5px;
+}
+.cylj li{
+	float:left;
+	margin:5px 6px;
+	line-height:18px;
+}
+.cylj li img{
+	vertical-align:top;
+	float:left;
+}
+.cylj li a{
+	display:block;
+	float:left;
+	width:100px;
+	vertical-align:top;
+	margin-left:10px;
+	color:#820000;
+}
