@@ -2,7 +2,7 @@
  * @Title: UserService.java
  * @Package com.hz.wxBiz.user.service
  * @Description: TODO
- * @author 李继�?
+ * @author 李继�?
  * @date 2015-6-17 下午4:44:53
  * @version V1.0  
  */
